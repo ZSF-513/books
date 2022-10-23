@@ -10,9 +10,6 @@ export class User extends Document {
 
   @Prop()
   age: number;
-
-  @Prop()
-  desc: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

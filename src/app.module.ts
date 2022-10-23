@@ -7,7 +7,7 @@ import { ArticleModule } from './article/module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/nest'), // Mongoose 链接
+    MongooseModule.forRoot('mongodb://localhost/book'), // Mongoose 链接
     UsersModule,
     ArticleModule,
   ],

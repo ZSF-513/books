@@ -14,7 +14,7 @@ export class UsersService {
   }
 
   async update(updateUsersDto: CreateUserDto): Promise<User> {
-    const query = { cid: updateUsersDto?.cid };
+    const query = { id: updateUsersDto?.id };
     const updateUser = this.userModel.findOneAndUpdate(query, updateUsersDto);
     return updateUser;
   }
